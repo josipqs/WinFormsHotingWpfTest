@@ -1,0 +1,130 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=system"
+                    xmlns:local="clr-namespace:JkWpfControlLibStyles.Colors">
+    <!-- Colors -->
+    <Color x:Key="TransparentColor">Transparent</Color>
+    <Color x:Key="MainColor">#072E4B</Color>
+    <Color x:Key="MainLiteColor">#072E4B</Color>
+    <Color x:Key="MainHiliteColor">#072E4B</Color>
+    <Color x:Key="MainAltColor">#2C4A66</Color>
+    <Color x:Key="MainAltHiliteColor">#072E4B</Color>
+    <Color x:Key="MainAltLiteColor">#072E4B</Color>
+    <Color x:Key="BackgroundMainColor">#072E4B</Color>
+    <Color x:Key="BackgroundAltColor">#072E4B</Color>
+    <Color x:Key="BackgroundInactiveColor">#072E4B</Color>
+    <Color x:Key="BackgroundHiliteColor">#072E4B</Color>
+    <Color x:Key="BackgroundExtColor">#072E4B</Color>
+    <Color x:Key="BackgroundDarkColor">#041727</Color>
+    <Color x:Key="BackgroundButtonMainColor">#072E4B</Color>
+    <Color x:Key="BackgroundButtonAltColor">#072E4B</Color>
+    <Color x:Key="BackgroundButtonExtColor">#072E4B</Color>
+    <Color x:Key="BorderMainColor">#FAF8F9</Color>
+    <Color x:Key="BorderAltColor">#072E4B</Color>
+    <Color x:Key="BorderControlColor">#17507A</Color>
+    <Color x:Key="BorderControlAltColor">#17507A</Color>
+    <Color x:Key="IconActiveColor">#FFFFFF</Color>
+    <Color x:Key="IconInactiveColor">#6F899F</Color>
+    <Color x:Key="IconHoverColor">#FFFFFF</Color>
+    <Color x:Key="IconPressedColor">#FFFFFF</Color>
+    <Color x:Key="IconDangerColor">#FFFFFF</Color>
+    <Color x:Key="IconDangerHoverColor">Red</Color>
+    <Color x:Key="IconDangerPressedColor">Red</Color>
+    <Color x:Key="IconWarningColor">#FFFFFF</Color>
+    <Color x:Key="IconWarningHoverColor">#FFFFFF</Color>
+    <Color x:Key="IconWarningPressedColor">#FFFFFF</Color>
+    <Color x:Key="IconInfoColor">#FFFFFF</Color>
+    <Color x:Key="IconInfoHoverColor">#FFFFFF</Color>
+    <Color x:Key="IconInfoPressedColor">#FFFFFF</Color>
+    <Color x:Key="TextMainColor">#FFFFFF</Color>
+    <Color x:Key="TextAltColor">#56A0D9</Color>
+    <Color x:Key="TextMainHiliteColor">#347BB1</Color>
+    <Color x:Key="TextMainInactiveColor">#072E4B</Color>
+    <Color x:Key="TextLiteColor">#072E4B</Color>
+    <Color x:Key="TextHeavyColor">#072E4B</Color>
+    <Color x:Key="TextHoverColor">#FFFFFF</Color>
+    <Color x:Key="TextInactiveColor">#072E4B</Color>
+    <Color x:Key="TextDangerColor">Red</Color>
+    <Color x:Key="TextDangerHoverColor">DarkRed</Color>
+    <Color x:Key="TextInfoColor">Blue</Color>
+    <Color x:Key="TextInfoHoverColor">DarkBlue</Color>
+    <Color x:Key="TextWarningColor">Yellow</Color>
+    <Color x:Key="TextWarningHoverColor">LightGoldenrodYellow</Color>
+    <Color x:Key="ButtonBackgroundColor">#6CB5EC</Color>
+    <Color x:Key="ButtonBorderColor">#6CB5EC</Color>
+    <Color x:Key="ButtonTextColor">#0A324F</Color>
+    <Color x:Key="ButtonAltBackgroundColor">#17517A</Color>
+    <Color x:Key="ButtonAltBorderColor">#17507A</Color>
+    <Color x:Key="ButtonAltTextColor">#A4D4F9</Color>
+    <Color x:Key="ComboBoxArrowColor">#60A2D6</Color>
+    <Color x:Key="ComboBoxHoverBackgrounColor">#6DB4EA</Color>
+    <Color x:Key="ScrollBarBackgroundColor">Transparent</Color>
+    <Color x:Key="ScrollBarThumbColor">#347BB1</Color>
+    
+    <Color x:Key="TabControlContentPaneBorderColor">#A2D1F6</Color>
+    <Color x:Key="TabControlTabItemBorderColor">#FFFFFF</Color>
+    <Color x:Key="TabControlTabItemForegroundColor">#FFFFFF</Color>
+    <Color x:Key="AvalonDockTabItemSelectedForegroundColor">#347BB1</Color>
+    <Color x:Key="AvalonDockTabItemSelectedBorderColor">#FFFFFF</Color>
+    <Color x:Key="AvalonDockDocumentPaneHeaderColor">#0F3F63</Color>
+    <Color x:Key="AvalonDockDocumentPaneHeaderBackgroundColor">#0F3F63</Color>
+    <Color x:Key="AvalonDockDocumentPaneHeaderBorderColor">#2C4A66</Color>
+    <Color x:Key="AvalonDockDocumentPaneHeaderForegroundColor">#6D879E</Color>
+    <Color x:Key="AvalonDockDocumentPaneHeaderSelectedColor">#164567</Color>
+    <Color x:Key="AvalonDockDocumentPaneBorderSelectedColor">#AADAFF</Color>
+    <Color x:Key="AvalonDockDocumentPaneHeaderSelectedForegroundColor">#FFFFFF</Color>
+    <Color x:Key="AvalonDockDocumentPaneHeaderCloseIconColor">#6F899F</Color>
+    <Color x:Key="AvalonDockDocumentPaneHeaderPlusIconColor">#879EAF</Color>
+
+    <!--<sys:string x:Key="PinMenuImageUriString">/Styles/AvalonDockStyle/Images/PinMenu_White.png</sys:string>-->
+    <!--<sys:Uri x:Key="PinMenuImageUri">pack://application:,,,/Styles/AvalonDockStyle/Images/PinMenu_White.png</sys:Uri>-->
+    <BitmapImage UriSource="pack://application:,,,/QueryStormWpfStyles;component/Styles/AvalonDockStyle/Images/PinMenu_White.png" x:Key="PinMenuImage" DecodePixelWidth="13" DecodePixelHeight="13" />
+    <BitmapImage UriSource="pack://application:,,,/QueryStormWpfStyles;component/Styles/AvalonDockStyle/Images/PinAutoHide_White.png" x:Key="PinAutoHideImage" DecodePixelWidth="13" DecodePixelHeight="13" />
+    <BitmapImage UriSource="pack://application:,,,/QueryStormWpfStyles;component/Styles/AvalonDockStyle/Images/PinClose_White.png" x:Key="PinCloseImage" DecodePixelWidth="13" DecodePixelHeight="13" />
+
+    <!-- Syncfusion DataGrid -->
+    <Color x:Key="SfDataGridBackgroundColor">#072E4B</Color>
+    <Color x:Key="SfDataGridForegroundColor">#CFD8DF</Color>
+    <Color x:Key="SfDataGridBorderColor">#A2D1F6</Color>
+    <Color x:Key="SfDataGridHeaderCellBackgroundColor">#041727</Color>
+    <Color x:Key="SfDataGridHeaderCellForgroundColor">#FFFFFF</Color>
+    <Color x:Key="SfDataGridHeaderCellBorderColor">#2C4A66</Color>
+    <Color x:Key="SfDataGridContentRowForegroundColor">#CFD8DF</Color>
+    <Color x:Key="SfDataGridContentRowBackgroundColor">#072E4B</Color>
+    <Color x:Key="SfDataGridContentRowBorderColor">#2C4A66</Color>
+    <Color x:Key="SfDataGridContentRowAltBackgroundColor">#0F3F63</Color>
+    <Color x:Key="SfDataGridContentRowAltForegroundColor">#CFD8DF</Color>
+    <Color x:Key="SfDataGridContentRowAltBorderColor">#2C4A66</Color>
+    
+    <!-- Checkbox -->
+    <Color x:Key="CheckBoxBackgroundColor">#347BB1</Color>
+    <Color x:Key="CheckBoxForegroundColor">#AADAFF</Color>
+    <Color x:Key="CheckBoxBorderColor">#347BB1</Color>
+    <Color x:Key="CheckBoxIconColor">#FFFFFF</Color>
+    <Color x:Key="CheckBoxUncheckedBackgroundColor">#041727</Color>
+    <Color x:Key="CheckBoxUncheckedBorderColor">#17507A</Color>
+    <Color x:Key="CheckBoxHoverBackgroundColor">#347BB1</Color>
+    <Color x:Key="CheckBoxHoverForegroundColor">#A0CCEF</Color>
+    <Color x:Key="CheckBoxHoverBorderColor">#347BB1</Color>
+    <Color x:Key="CheckBoxHoverIconColor">#84C3F3</Color>
+    <Color x:Key="CheckBoxDisabledBackgroundColor">#6F8DA4</Color>
+    <Color x:Key="CheckBoxDisabledForegroundColor">#A5D5FA</Color>
+    <Color x:Key="CheckBoxDisabledBorderColor">#6F8DA4</Color>
+    <Color x:Key="CheckBoxDisabledIconColor">#FFFFFF</Color>
+    <Color x:Key="CheckBoxPressedBackgroundColor">#347BB1</Color>
+    <Color x:Key="CheckBoxPressedForegroundColor">#A5D5FA</Color>
+    <Color x:Key="CheckBoxPressedBorderColor">#347BB1</Color>
+    <Color x:Key="CheckBoxPressedIconColor">#FFFFFF</Color>
+    
+    <!-- test colors -->
+    <Color x:Key="JKTestLime">Lime</Color>
+    <Color x:Key="JKTestMaroon">Maroon</Color>
+    <Color x:Key="JKTestViolet">Violet</Color>
+    <Color x:Key="JKTestMagenta">Magenta</Color>
+    <Color x:Key="JKTestRed">Red</Color>
+    <Color x:Key="JKTestCyan">Cyan</Color>
+    <Color x:Key="JKTestKhaki">Khaki</Color>
+    <Color x:Key="JKTestOrange">Orange</Color>
+    <Color x:Key="JKTestPurple">Purple</Color>
+    
+</ResourceDictionary>

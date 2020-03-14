@@ -5,6 +5,18 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsHostingWpfTest", "WinFormsHostingWpfTest\WinFormsHostingWpfTest.csproj", "{148530A3-5629-45DE-923E-1FD252E27C2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JkWpfControlLib", "JkWpfControlLib\JkWpfControlLib.csproj", "{888A6813-04F6-4926-95D8-20EB23C9434F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{6089AFF7-FF70-4F3D-81E4-05157545897A}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\Syncfusion\Syncfusion.Data.WPF.dll = Dependencies\Syncfusion\Syncfusion.Data.WPF.dll
+		Dependencies\Syncfusion\Syncfusion.Licensing.dll = Dependencies\Syncfusion\Syncfusion.Licensing.dll
+		Dependencies\Syncfusion\Syncfusion.SfGrid.WPF.dll = Dependencies\Syncfusion\Syncfusion.SfGrid.WPF.dll
+		Dependencies\Syncfusion\Syncfusion.Shared.WPF.dll = Dependencies\Syncfusion\Syncfusion.Shared.WPF.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JkWpfControlLibStyles", "JkWpfControlLibStyles\JkWpfControlLibStyles.csproj", "{43C00F55-2577-40D8-984C-8DFA76AE5EE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +27,14 @@ Global
 		{148530A3-5629-45DE-923E-1FD252E27C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{148530A3-5629-45DE-923E-1FD252E27C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{148530A3-5629-45DE-923E-1FD252E27C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{888A6813-04F6-4926-95D8-20EB23C9434F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888A6813-04F6-4926-95D8-20EB23C9434F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888A6813-04F6-4926-95D8-20EB23C9434F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888A6813-04F6-4926-95D8-20EB23C9434F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C00F55-2577-40D8-984C-8DFA76AE5EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C00F55-2577-40D8-984C-8DFA76AE5EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C00F55-2577-40D8-984C-8DFA76AE5EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C00F55-2577-40D8-984C-8DFA76AE5EE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

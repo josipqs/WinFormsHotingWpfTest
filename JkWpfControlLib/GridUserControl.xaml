@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="JkWpfControlLib.GridUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sf="http://schemas.syncfusion.com/wpf"
+             xmlns:vm="clr-namespace:JkWpfControlLib.ViewModel" 
+             xmlns:local="clr-namespace:JkWpfControlLib" 
+             xmlns:styles="clr-namespace:JkWpfControlLibStyles;assembly=JkWpfControlLibStyles"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <styles:BlueTheme />
+                <!--<styles:GreyTheme />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid Background="YellowGreen" ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="30" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <sf:SfDataGrid Grid.Column="1" Grid.Row="1" ItemsSource="{Binding Languages}" AutoGenerateColumns="False" x:Name="datagrid" 
+                       AllowTriStateSorting="True" AllowDraggingColumns="True" AllowResizingColumns="True"  Focusable="True"
+                       RowHeaderWidth="40" ShowSortNumbers="True" SelectionUnit="Any" ShowRowHeader="True"
+                       IsReadOnly="True" SelectionMode="Extended" ColumnSizer="None" BorderThickness="2" 
+                       Background="Transparent">
+            <sf:SfDataGrid.Columns>
+                <sf:GridTextColumn HeaderText="Code" MappingName="Code" />
+                <sf:GridTextColumn HeaderText="Country" MappingName="Country" />
+                <sf:GridTextColumn HeaderText="English Name" MappingName="EnglishName" />
+                <sf:GridTextColumn HeaderText="Native Name" MappingName="NativeName" />
+                <sf:GridTextColumn HeaderText="Currency Symbol" MappingName="CurrencySymbol" />
+                <sf:GridTextColumn HeaderText="LCID" MappingName="LCID" />
+                <sf:GridCheckBoxColumn HeaderText="Is Neutral" MappingName="IsNeutral" />
+                <sf:GridTextColumn HeaderText="Calendar Type" MappingName="CalendarType" />
+                <!--<sf:GridTextColumn HeaderText="IsLeapYear" MappingName="IsLeapYear" />-->
+                <sf:GridTextColumn HeaderText="First Day Of Week" MappingName="FirstDayOfWeek" />
+                <sf:GridTextColumn HeaderText="Month Names" MappingName="MonthNames" />
+                <!--<sf:GridComboBoxColumn HeaderText="Day Names" MappingName="DayNames" ItemsSource="{Binding Languages}" DisplayMemberPath="DayNames" />-->
+                <sf:GridTextColumn HeaderText="Date Pattern" MappingName="LongDatePattern" />
+                <sf:GridTextColumn HeaderText="Time Pattern" MappingName="LongTimePattern" />
+                <sf:GridCheckBoxColumn HeaderText="Is RTL" MappingName="IsRightToLeft" />
+                <sf:GridTextColumn HeaderText="Parent Language" MappingName="ParentLanguageName" />
+            </sf:SfDataGrid.Columns>
+        </sf:SfDataGrid>
+
+        <sf:SfDataGrid Grid.Row="3" Grid.Column="1" AutoGenerateColumns="True" x:Name="sfdatagrid" 
+                       AllowTriStateSorting="True" AllowDraggingColumns="True" Focusable="True"
+                       RowHeaderWidth="40" ShowSortNumbers="True" SelectionUnit="Any" IsReadOnly="True" 
+                       AllowResizingColumns="True" SelectionMode="Extended" ColumnSizer="None" BorderThickness="0" 
+                       ShowRowHeader="True" Background="Transparent">
+        </sf:SfDataGrid>
+
+    </Grid>
+</UserControl>

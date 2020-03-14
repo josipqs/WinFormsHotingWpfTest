@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    x:Class="JkWpfControlLibStyles.BlueTheme"
+                    xmlns:local="clr-namespace:JkWpfControlLibStyles">
+
+    <ResourceDictionary.MergedDictionaries>
+
+        <ResourceDictionary Source="Colors/Blue.xaml"/>
+        <ResourceDictionary Source="Brushes/ThemeBrushes.xaml"/>
+
+        <!-- finally include merged dictionary with control styles -->
+        <ResourceDictionary Source="Styles/AllStyles.xaml"/>
+
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

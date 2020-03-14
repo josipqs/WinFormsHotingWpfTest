@@ -1,0 +1,1 @@
+This is the version of AvalonDock taken from QueryStorm project (from bin\Debug folder). 
